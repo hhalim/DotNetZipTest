@@ -67,6 +67,7 @@ namespace DotNetZipTest
                         Console.WriteLine($"Total files to compress {e.EntriesTotal}");
                         pbSet = true;
                     }
+                    //throw new Exception("Cancel or exit right here???"); //DEBUG
                     break;
 
                 case ZipProgressEventType.Saving_Completed:
